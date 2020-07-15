@@ -40,7 +40,9 @@ EPS_TransportSystem_Config = {
         Other
 
     --]]
-
+    TransportCommand = false, -- Allow players to use the transport command?
+    TransportCommand_Name = "!transport",
+    
     NoUseJobs = {"Clone Cadet"}, -- Which Jobs (Names) shouldn't be able to open the Transport Menu
 
     Prefix = "Transport", -- Prefix
