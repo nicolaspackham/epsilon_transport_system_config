@@ -54,18 +54,20 @@ EPS_TransportSystem_Config = {
 
     ["Locations"] = {
         ["Ship"] = {
-            Jobs = {"Gun Dealer"},
+            Jobs = {"Gun Dealer"}, -- Job Names
             Map = "rp_arquitens", -- Map Name
-            Location = Vector(-9955.416016, 6292.819336, -311.968750),
-            Angles = Angle(0.000, 90.412, 0.000),
-            Cost = "Distance"
+            Location = Vector(-9955.416016, 6292.819336, -311.968750), -- !position
+            Angles = Angle(0.000, 90.412, 0.000), -- !angles
+            Cost = "Distance", -- "Distance" or a number
+            Description = "The Ship of the Republic Army.", -- Description
         },
         ["Base"] = {
-            Jobs = {},
-            Map = "rp_arquitens",
-            Location = Vector(-7411.880859, 8488.951172, -7935.968750), 
-            Angles = Angle(0.000, -158.276, 0.000),
-            Cost = "Distance",
+            Jobs = {}, -- Job Names
+            Map = "rp_arquitens", -- Map Name
+            Location = Vector(-9955.416016, 6292.819336, -311.968750), -- !position
+            Angles = Angle(0.000, 90.412, 0.000), -- !angles
+            Cost = "Distance", -- "Distance" or a number
+            Description = "The Base of the Republic Army.", -- Description
         },
     },
 
@@ -74,5 +76,6 @@ EPS_TransportSystem_Config = {
         UnableToDeploy = "You are unable to travel to this Deployment Location!",
         TakenTo = "You've been taken to",
         CostOf = "at the cost of",
+        IncorrectJob = "You are not the Correct Job.",
     }
 }
